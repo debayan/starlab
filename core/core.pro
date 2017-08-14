@@ -6,6 +6,7 @@
 #-------------------------------------------------------------------------------
 TEMPLATE = subdirs
 CONFIG += ordered
+QMAKE_CXXFLAGS += -Wc++0x-compat
 
 #--- ROOT OF STARLAB DOCUMENTATION
 OTHER_FILES += mainpage.h

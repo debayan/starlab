@@ -1,6 +1,6 @@
 TEMPLATE = subdirs
 CONFIG += ordered 
-
+QT += widgets
 SUBDIRS += surfacemesh
 
 # I/O Plugins

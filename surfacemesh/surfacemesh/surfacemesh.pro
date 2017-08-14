@@ -1,9 +1,11 @@
 include($$[STARLAB])
-StarlabTemplate(sharedlib)
- 
+#StarlabTemplate(sharedlib)
+TEMPLATE = subdirs
+QT += widgets 
 # Expose this to the global build
 system(qmake -set SURFACEMESH $$PWD/surfacemesh.prf)
 OTHER_FILES = surfacemesh.prf
+INCLUDEPATH += ../../core/starlib/
 
 # THIS IS FOR OUR MODEL WRAPPER
 HEADERS += SurfaceMeshModel.h \
